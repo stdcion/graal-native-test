@@ -40,7 +40,7 @@ file(GLOB sources CONFIGURE_DEPENDS
 
 # Build executable
 add_executable(${target}
-        MACOSX_BUNDLE
+        #MACOSX_BUNDLE
         ""
         )
 
