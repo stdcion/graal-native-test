@@ -53,7 +53,7 @@ string(TOUPPER ${META_PROJECT_ID} META_PROJECT_ID)
 project(${META_PROJECT_NAME} C CXX)
 message(STATUS "System ${CMAKE_SYSTEM_NAME}")
 message(STATUS "Project ${META_PROJECT_NAME}")
-
+message(STATUS "BuildType ${CMAKE_BUILD_TYPE}")
 
 #
 # Project configuration options
