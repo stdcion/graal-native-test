@@ -59,6 +59,30 @@
       }
     },
     {
+      "name": "conf-win-vs-debug",
+      "description": "Debug preset for Windows and Visual Studio.",
+      "inherits": [
+        "conf-common",
+        "language-std",
+        "flags-win-vs"
+      ],
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    },
+    {
+      "name": "conf-win-vs-release",
+      "description": "Release preset for Windows and Visual Studio.",
+      "inherits": [
+        "conf-common",
+        "language-std",
+        "flags-win-vs"
+      ],
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },
+    {
       "name": "conf-linux",
       "description": "Common preset for Linux.",
       "inherits": [
