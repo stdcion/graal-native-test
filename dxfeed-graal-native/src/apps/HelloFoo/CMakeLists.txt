@@ -118,14 +118,3 @@ target_link_options(${target}
         PRIVATE
         ${DEFAULT_LINKER_OPTIONS}
         )
-
-
-#
-# Custom commands
-#
-
-# Copy shared library to output directory
-add_custom_command(TARGET ${target} POST_BUILD
-        COMMAND ${CMAKE_COMMAND} -E copy_if_different
-        $<TARGET_FILE:GraalSample> $<TARGET_FILE_DIR:${target}>
-        )
