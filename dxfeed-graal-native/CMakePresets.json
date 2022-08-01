@@ -62,7 +62,7 @@
       "name": "conf-win-vs-debug",
       "description": "Debug preset for Windows and Visual Studio.",
       "inherits": [
-        "conf-common",
+        "conf-win-vs",
         "language-std",
         "flags-win-vs"
       ],
@@ -74,7 +74,7 @@
       "name": "conf-win-vs-release",
       "description": "Release preset for Windows and Visual Studio.",
       "inherits": [
-        "conf-common",
+        "conf-win-vs",
         "language-std",
         "flags-win-vs"
       ],
