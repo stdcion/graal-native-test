@@ -51,7 +51,6 @@ string(TOUPPER ${META_PROJECT_ID} META_PROJECT_ID)
 
 # Set project
 project(${META_PROJECT_NAME} C CXX)
-message(STATUS "Toolchain ${CMAKE_TOOLCHAIN_FILE}")
 message(STATUS "System ${CMAKE_SYSTEM_NAME}")
 message(STATUS "Project ${META_PROJECT_NAME}")
 
