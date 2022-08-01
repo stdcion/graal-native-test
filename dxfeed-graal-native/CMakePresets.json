@@ -62,6 +62,7 @@
       "name": "config-linux",
       "description": "Common preset for Linux.",
       "inherits": [
+        "conf-common",
         "language-std"
       ]
     }
