@@ -42,7 +42,7 @@
       }
     },
     {
-      "name": "config-win-vs",
+      "name": "conf-win-vs",
       "description": "Common preset for Windows and Visual Studio.",
       "inherits": [
         "conf-common",
@@ -59,7 +59,7 @@
       }
     },
     {
-      "name": "config-linux",
+      "name": "conf-linux",
       "description": "Common preset for Linux.",
       "inherits": [
         "conf-common",
@@ -70,11 +70,11 @@
   "buildPresets": [
     {
       "name": "build-win-vs",
-      "configurePreset": "config-win-vs"
+      "configurePreset": "conf-win-vs"
     },
     {
       "name": "build-linux",
-      "configurePreset": "config-linux"
+      "configurePreset": "conf-linux"
     }
   ]
 }
