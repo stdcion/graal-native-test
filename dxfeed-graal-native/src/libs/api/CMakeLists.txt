@@ -5,6 +5,13 @@
 # Target
 set(target api)
 
+# Print status
+message(STATUS "Lib ${target}")
+
+# Set API export file and macro
+string(MAKE_C_IDENTIFIER ${target} target_id)
+string(TOUPPER ${target_id} target_id)
+
 # Target name
 set(target_name ${target})
 
@@ -13,9 +20,6 @@ set(output_name ${target})
 
 # Add project prefix to target name
 set(target ${META_PROJECT_NAME}.${target})
-
-# Print status
-message(STATUS "Lib ${target}")
 
 
 #
