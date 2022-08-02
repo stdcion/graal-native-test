@@ -56,7 +56,11 @@
       "name": "flags-mac",
       "hidden": true,
       "cacheVariables": {
-        "CMAKE_MACOSX_RPATH": "ON"
+        "CMAKE_SKIP_BUILD_RPATH" : "ON",
+        "CMAKE_BUILD_WITH_INSTALL_RPATH": "ON",
+        "CMAKE_INSTALL_RPATH_USE_LINK_PATH" : "OFF",
+        "CMAKE_MACOSX_RPATH": "ON",
+        "CMAKE_INSTALL_RPATH": "."
       }
     },
     {
