@@ -60,7 +60,7 @@
         "CMAKE_BUILD_WITH_INSTALL_RPATH": "ON",
         "CMAKE_INSTALL_RPATH_USE_LINK_PATH" : "OFF",
         "CMAKE_MACOSX_RPATH": "ON",
-        "CMAKE_INSTALL_RPATH": "."
+        "CMAKE_INSTALL_RPATH": "@loader_path"
       }
     },
     {
