@@ -55,9 +55,10 @@ project(${META_PROJECT_NAME}
         DESCRIPTION ${META_PROJECT_DESCRIPTION}
         LANGUAGES C CXX
         )
-message(STATUS "System ${CMAKE_SYSTEM_NAME}")
-message(STATUS "Project ${META_PROJECT_NAME}")
-message(STATUS "BuildType ${CMAKE_BUILD_TYPE}")
+message(STATUS "System: ${CMAKE_SYSTEM_NAME}")
+message(STATUS "Project: ${META_PROJECT_NAME}")
+message(STATUS "BuildType: ${CMAKE_BUILD_TYPE}")
+message(STATUS "SkipTests: ${SKIP_TESTS}")
 
 #
 # Project configuration options
@@ -96,3 +97,7 @@ include(cmake/CompileOptions.cmake)
 add_subdirectory(extern)
 add_subdirectory(src/apps)
 add_subdirectory(src/libs)
+if (NOT ${SKIP_TESTS})
+    enable_testing() # Must be in top-level file
+    add_subdirectory(tests)
+endif ()

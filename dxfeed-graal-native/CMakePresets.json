@@ -27,7 +27,11 @@
       "binaryDir": "${sourceDir}/build/${presetName}",
       "installDir": "${sourceDir}/install/${presetName}",
       "cacheVariables": {
-        "BUILD_SHARED_LIBS": "ON"
+        "BUILD_SHARED_LIBS": "ON",
+        "SKIP_TESTS": {
+          "type": "BOOL",
+          "value": "FALSE"
+        }
       }
     },
     {
