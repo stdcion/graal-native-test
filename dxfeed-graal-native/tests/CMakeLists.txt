@@ -1,1 +1,1 @@
-add_subdirectory(test_foo)
+add_subdirectory(HelloCatch2)

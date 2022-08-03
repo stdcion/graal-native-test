@@ -3,7 +3,7 @@
 #
 
 # Target name
-set(target test_foo)
+set(target HelloCatch2)
 
 # Output name
 set(output_name ${target})
@@ -12,7 +12,7 @@ set(output_name ${target})
 set(target ${META_PROJECT_NAME}.${target})
 
 # Print status
-message(STATUS "App ${target}")
+message(STATUS "Test ${target}")
 
 
 #
