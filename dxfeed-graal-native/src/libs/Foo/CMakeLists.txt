@@ -66,9 +66,9 @@ set_target_properties(${target}
         PROPERTIES
         ${DEFAULT_PROJECT_OPTIONS}
         FOLDER "${IDE_FOLDER}"
-        VERSION ${META_VERSION}
-        SOVERSION ${META_VERSION_MAJOR}
-        OUTPUT_NAME ${output_name}
+        VERSION "${META_VERSION}"
+        SOVERSION "${META_VERSION_MAJOR}"
+        OUTPUT_NAME "${output_name}"
         )
 
 
@@ -79,7 +79,7 @@ set_target_properties(${target}
 target_include_directories(${target}
         PRIVATE
         ${PROJECT_BINARY_DIR}/include
-        ${PROJECT_BINARY_DIR}/source/include
+        ${PROJECT_BINARY_DIR}/src/include
         ${CMAKE_CURRENT_SOURCE_DIR}/include
         ${CMAKE_CURRENT_BINARY_DIR}/include
 

@@ -30,7 +30,7 @@ if (NOT GIT_SHA1)
 endif ()
 
 # Meta information about the project
-set(META_PROJECT_NAME "dxfeed-graal-native")
+set(META_PROJECT_NAME "dxfeed-api-graal-native")
 set(META_PROJECT_DESCRIPTION "C-API wrapper over QD project using GraalVM")
 set(META_AUTHOR_ORGANIZATION "Devexperts LLC")
 set(META_VERSION_MAJOR "0")
