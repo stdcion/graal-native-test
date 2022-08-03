@@ -31,7 +31,7 @@ endif ()
 
 # Meta information about the project
 set(META_PROJECT_NAME "dxfeed-graal-native")
-set(META_PROJECT_DESCRIPTION "C-API wrapper over QD project")
+set(META_PROJECT_DESCRIPTION "C-API wrapper over QD project using GraalVM")
 set(META_AUTHOR_ORGANIZATION "Devexperts LLC")
 set(META_VERSION_MAJOR "0")
 set(META_VERSION_MINOR "1")
@@ -50,7 +50,11 @@ string(TOUPPER ${META_PROJECT_ID} META_PROJECT_ID)
 #
 
 # Set project
-project(${META_PROJECT_NAME} C CXX)
+project(${META_PROJECT_NAME}
+        VERSION ${META_VERSION_REVISION}
+        DESCRIPTION ${META_PROJECT_DESCRIPTION}
+        LANGUAGES C CXX
+        )
 message(STATUS "System ${CMAKE_SYSTEM_NAME}")
 message(STATUS "Project ${META_PROJECT_NAME}")
 message(STATUS "BuildType ${CMAKE_BUILD_TYPE}")
