@@ -133,6 +133,30 @@
         "language-std",
         "flags-mac"
       ]
+    },
+    {
+      "name": "conf-mac-release",
+      "description": "Release preset for macOS",
+      "inherits": [
+        "conf-common",
+        "language-std",
+        "flags-mac"
+      ],
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },
+    {
+      "name": "conf-mac-debug",
+      "description": "Debug preset for macOS",
+      "inherits": [
+        "conf-common",
+        "language-std",
+        "flags-mac"
+      ],
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
     }
   ],
   "buildPresets": [
